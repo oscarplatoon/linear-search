@@ -7,17 +7,7 @@ a random order:
 values = (1..1000).to_a.shuffle
 ```
 
-Write code to find a value `x` (such as `25`) in the array following this algorithm:
-
-0. Set a `found` flag to false
-1. Set a `marker` to zero
-2. Find the value in `values` at position `marker`
-3. See if that value is equal to the one we're searching for
-4. If it is, set `found` to true
-5. If it's not, do nothing
-6. If `marker` is at the end of the set, exit the search and say the value was not found
-7. If the value has not been found, increment the `marker` and go back to step 2
-8. If the value has been found, print that message
+Don't forget to pseudocode to get yourself started.
 
 Once you have that code written and working (make sure you try out several target search values including the upper and lower limit of your values),
 answer the questions below.
