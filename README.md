@@ -1,6 +1,6 @@
 # Algorithm Drill Linear Search
 
-##Summary
+## Summary
 
 In computer science, there are many different ways to search through collections of data. Understanding the various algorithms and patterns for searching and sorting data sets is an essential part of computer science.
 
@@ -15,8 +15,8 @@ Linear search (also called *sequential* search) is an algorithm for finding a pa
 Source: [Practical Programming](http://pragprog.com/book/gwpy/practical-programming)
 
 
-##Releases
-###Release 0 : Basic linear search
+## Releases
+### Release 0 : Basic linear search
 
 Write a method `linear_search` that takes two arguments: an object and an array. You'll want to add tests too.
 
@@ -29,7 +29,7 @@ Here's the catch: you can't use any of Ruby's built-in `Array` or `Enumerable` m
 
 There are two tests already in the spec file, but you should add more to prove that your code works correctly. Are there any edge cases you need to consider? Did you hit any bugs that should have had tests?
 
-###Release 1 : Global linear search
+### Release 1 : Global linear search
 
 Write a new method `global_linear_search` that returns an array of *all the indices* for the object it searches for.  In other words, if the object `x` is in more than one place in the array, `global_linear_search` will return an array containing the index of each occurrence of `x`.
 
