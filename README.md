@@ -20,7 +20,7 @@ Write a method `linear_search` that takes two arguments: the object (i.e., strin
 
 #### Guidelines
 
- * It should return the index of the object in the array by going through each element in sequence and returning the index of the first instance of the object.
+ * It should return an integer representing the index of the object in the array by going through each element in sequence and returning the index of the first instance of the object.
  * If the object searched for does not exist in the array, it should return `nil`.
 
 Here's the catch: for the Ruby portion, you can't use any built-in `Array` or `Enumerable` methods *except* for `Array#[]`.  You will have to use of the keywords `for`, `while`, or `until`.
