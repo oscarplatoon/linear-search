@@ -4,7 +4,7 @@
 
 In computer science, there are many different ways to search through collections of data. Understanding the various algorithms and patterns for searching and sorting data sets is an essential part of computer science.
 
-While modern programming languages such as Ruby abstract many of the lower-level functions of programming by providing us with methods like `Array#index`, it is important to know what is going on underneath the hood. Employers look for people who understand how to put a car together, not someone who knows how to drive. Aside from being important to your knowledge of theory, the searching and sorting algorithms you use will have a significant impact on your program's performance (how long it takes to execute and how much memory it uses). We'll be talking about Big O notation soon.
+While modern programming languages such as Python abstract many of the lower-level functions of programming by providing us with methods like `list#index`, it is important to know what is going on underneath the hood. Employers look for people who understand how to put a car together, not someone who knows how to drive. Aside from being important to your knowledge of theory, the searching and sorting algorithms you use will have a significant impact on your program's performance (how long it takes to execute and how much memory it uses). We'll be talking about Big O notation soon.
 
 One of the most basic searching algorithms is the **linear search**.  In this challenge, you will build a `linear_search` method using very basic programming constructs.
 
@@ -23,8 +23,7 @@ Write a method `linear_search` that takes two arguments: the object (i.e., strin
  * It should return an integer representing the index of the object in the array by going through each element in sequence and returning the index of the first instance of the object.
  * If the object searched for does not exist in the array, it should return `nil`.
 
-Here's the catch: for the Ruby portion, you can't use any built-in `Array` or `Enumerable` methods *except* for `Array#[]`.  You will have to use of the keywords `for`, `while`, or `until`.
-
+Here's the catch: for the Python portion, you can't use any built-in `list` or `Enumerable` methods *except* for `list#[]`.  You will have to use of the keywords `for`, and `while`.
 There are two tests already in the spec file, but you should add more to prove that your code works correctly. Are there any edge cases you need to consider? Did you hit any bugs that should have had tests?
 
 ### Release 1 : Global linear search
@@ -33,10 +32,10 @@ Write a new method `global_linear_search` that returns an array of *all the indi
 
 Here's an example of what that might look like.
 
-```ruby
-bananas_arr = "bananas".split(//)
+```python
+bananas_list = list('bananas')
 # => ["b", "a", "n", "a", "n", "a", "s"]
-global_linear_search("a", bananas_arr)
+global_linear_search("a", bananas_list)
 # => [ 1, 3, 5 ]
 ```
 
