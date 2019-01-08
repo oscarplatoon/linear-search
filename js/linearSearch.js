@@ -1,8 +1,9 @@
-var values = [];
-for (var i = 1; i <= 1000; i++) {
-    values.push(i);
+const arrayToSearchThrough = [];
+for (let i = 1; i <= 1000; i++) {
+    arrayToSearchThrough.push(i);
 }
 
-exports.linearSearch = function(x, values) {
+exports.linearSearch = function(valueToFind, arrayToSearchThrough) {
 
 };
+
