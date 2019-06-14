@@ -26,7 +26,7 @@ Write a function `linear_search` that takes two arguments: the object (i.e., str
  * It should return an integer representing the index of the object in the array by going through each element in sequence and returning the index of the first instance of the object.
  * If the object searched for does not exist in the array, it should return `None`(Python) or `undefined`(Javascript).
 
-Here's the catch: for the Python portion, you can't use any built-in `list` or `Enumerable` methods *except* for `list()`.  You will have to use of the keywords `for`, or `while`.
+Here's the catch: for the Python portion, you can't use any built-in `list` or `Enumerable` methods *except* for `list()`.  You will have to use the keywords `for`, or `while`.
 There are two tests already in the spec file, but you should add more to prove that your code works correctly. Are there any edge cases you need to consider? Did you hit any bugs that should have had tests?
 
 ### Release 1 : Global linear search
