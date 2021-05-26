@@ -1,8 +1,3 @@
-const arrayToSearchThrough = [];
-for (let i = 1; i <= 1000; i++) {
-    arrayToSearchThrough.push(i);
-}
-
 function linearSearch(valueToFind, arrayToSearchThrough) {
     
     var indexLocations = []
@@ -10,18 +5,20 @@ function linearSearch(valueToFind, arrayToSearchThrough) {
     
     
     for (var i = 0; i < arrayToSearchThrough.length; i++) {
-        if (typeof arrayToSearchThrough.indexOf(valueToFind) != "number") {
-            console.log("undefined")
-            break;
-        }
+       
+        
       if (arrayToSearchThrough[i] == valueToFind) {
-          //indexLocations = []ac
+          
           indexLocations.push(i)
+          i++
       } 
-      
     }
     
-    return indexLocations
+    if (indexLocations.length >= 1) {
+      return indexLocations
+    } else {
+      return "undefined"
+    }
 };
 
 console.log(linearSearch(2, [1,2,3]))// === 1);
