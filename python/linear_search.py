@@ -1,6 +1,15 @@
-array_to_search_through = []
-for number in range(1, 1001):
-    array_to_search_through.append(number)
-
 def linear_search(value_to_find, array_to_search_through):
-    # your code here
+    answer = []
+    count = 0
+    for x in array_to_search_through:
+        if(x == value_to_find):
+            answer.append(count)
+        count += 1
+    if (answer == []):
+        return None
+    elif(len(answer)==1):
+        return answer[0]
+    else:
+        return answer
+
+
