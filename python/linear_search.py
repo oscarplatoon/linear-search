@@ -8,6 +8,8 @@ def linear_search(value_to_find, array_to_search_through):
         count += 1
         if element == value_to_find:
             return count
+    return None
+            
 
 
 
@@ -18,6 +20,8 @@ def linear_search_global(value_to_find, array_to_search_through):
         count += 1
         if element == value_to_find:
              index_list.append(count)
-    print(index_list)
+if index_list == []:
+    return None
+return index_list = []
 
 
